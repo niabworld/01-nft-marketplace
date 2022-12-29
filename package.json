@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nf start",
     "backend": "nodemon backend/bin/server",
-    "frontend": "parcel frontend/src/index.html"
+    "frontend": "parcel frontend/src/index.html",
+    "build": "npm run backend && npm run frontend"
   },
   "keywords": [],
   "author": "",
