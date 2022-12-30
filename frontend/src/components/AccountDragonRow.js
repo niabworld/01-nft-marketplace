@@ -41,6 +41,7 @@ class AccountDragonRow extends Component {
         nickname: this.state.nickname,
         isPublic: this.state.isPublic,
         saleValue: this.state.saleValue,
+        sireValue: this.state.sireValue,
       }),
     })
       .then((response) => response.json())

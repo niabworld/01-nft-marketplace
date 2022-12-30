@@ -56,8 +56,8 @@ class DragonTable {
     });
   }
 
-  static updateDragon({ dragonId, nickname, isPublic, saleValue }) {
-    const settingsMap = { nickname, isPublic, saleValue };
+  static updateDragon({ dragonId, nickname, isPublic, saleValue, sireValue }) {
+    const settingsMap = { nickname, isPublic, saleValue, sireValue };
 
     const validQueries = Object.entries(settingsMap).filter(
       ([settingKey, settingValue]) => {

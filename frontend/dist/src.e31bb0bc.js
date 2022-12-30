@@ -40204,7 +40204,7 @@ var Home = /*#__PURE__*/function (_Component) {
       return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Button, {
         onClick: this.props.logout,
         className: "logout-button"
-      }, "Log Out"), /*#__PURE__*/_react.default.createElement("h2", null, "Dragon Stack"), /*#__PURE__*/_react.default.createElement(_Generation.default, null), /*#__PURE__*/_react.default.createElement(_Dragon.default, null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_AccountInfo.default, null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+      }, "Log Out"), /*#__PURE__*/_react.default.createElement("h2", null, "NFT Marketplace"), /*#__PURE__*/_react.default.createElement(_Generation.default, null), /*#__PURE__*/_react.default.createElement(_Dragon.default, null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_AccountInfo.default, null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
         to: "/account-dragons"
       }, "Account Dragons"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
         to: "/public-dragons"
@@ -40487,7 +40487,8 @@ var AccountDragonRow = /*#__PURE__*/function (_Component) {
           dragonId: _this.props.dragon.dragonId,
           nickname: _this.state.nickname,
           isPublic: _this.state.isPublic,
-          saleValue: _this.state.saleValue
+          saleValue: _this.state.saleValue,
+          sireValue: _this.state.sireValue
         })
       }).then(function (response) {
         return response.json();
@@ -41039,7 +41040,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "11414" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "3437" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
